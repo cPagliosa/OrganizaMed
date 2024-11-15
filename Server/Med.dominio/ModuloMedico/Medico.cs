@@ -6,19 +6,20 @@ namespace Med.dominio.ModuloMedico
     {
         public string Nome { get; set; }
         public string CRM { get; set; }
-        public DateTime DataUltimaAtividade { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
+        public DateTime Cooldown { get; set; }
+
 
         public Medico() { }
 
-        public Medico(string nome,string crm,string email,string telefone,DateTime UltimaAtividade)
+        public Medico(string nome,string crm,string email,string telefone, DateTime? cooldown = null)
         {
             this.Nome = nome;
             this.CRM = crm;
             this.Email = email;
             this.Telefone = telefone;
-            this.DataUltimaAtividade = UltimaAtividade;
+            this.Cooldown = cooldown ?? DateTime.MinValue;
         }
         public override List<string> Validar()
         {

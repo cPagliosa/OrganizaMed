@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Med.dominio.Compartilhado.EntidadeBase">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Compartilhado\EntidadeBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Med.dominio.ModuloAtividade.Atividade">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAIAAABA=</HashCode>
+      <FileName>ModuloAtividade\Atividade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Med.dominio.ModuloConsulta.Consulta">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModuloConsulta\Consulta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Med.dominio.ModuloCirurgia.Cirurgia">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAAgAAAAAA=</HashCode>
+      <FileName>ModuloCirurgia\Cirurgia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Med.dominio.ModuloMedico.Medico">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAAAAAAAAAAAAAACAAQAgAAAAAAEAAAA=</HashCode>
+      <FileName>ModuloMedico\Medico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Med.dominio.Compartilhado.IRepositorioBase&lt;TEntidadeBase&gt;">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAEAAAA=</HashCode>
+      <FileName>Compartilhado\IRepositorioBase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Med.dominio.ModuloMedico.IRepositorioMedico" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModuloMedico\IRepositorioMedico.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Med.dominio.ModuloConsulta.IRepositorioConsulta" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModuloConsulta\IRepositorioConsulta.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Med.dominio.ModuloCirurgia.IRepositorioCirurgia" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModuloCirurgia\IRepositorioCirurgia.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
