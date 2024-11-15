@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Med.dominio\\Med.dominio.csproj": {}
+    "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\Med.dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Med.dominio\\Med.dominio.csproj": {
+    "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\Med.dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Med.dominio\\Med.dominio.csproj",
+        "projectUniqueName": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\Med.dominio.csproj",
         "projectName": "Med.dominio",
-        "projectPath": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Med.dominio\\Med.dominio.csproj",
+        "projectPath": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\Med.dominio.csproj",
         "packagesPath": "C:\\Users\\caiop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Med.dominio\\obj\\",
+        "outputPath": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caiop\\AppData\\Roaming\\NuGet\\NuGet.Config",
