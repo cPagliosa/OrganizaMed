@@ -6,8 +6,8 @@ namespace Med.dominio.ModuloCirurgia
     public class Cirurgia : Atividade
     {
         public List<Medico> Medicos { get; set; }
-
         public TimeSpan Descanco = TimeSpan.FromHours(4);
+
         public Cirurgia() { }
 
         public Cirurgia(string titulo, List<Medico> medicos, DateTime inicio, DateTime termino)
@@ -20,22 +20,38 @@ namespace Med.dominio.ModuloCirurgia
 
         public override List<string> Validar()
         {
-            List<string> erros = [];
+            List<string> erros = new List<string>();
 
             if (string.IsNullOrEmpty(this.Titulo))
-                erros.Add("O titulo não pode ser nulo");
+                erros.Add("O título não pode ser nulo");
 
-            if (this.Medicos.Count > 0)
-                erros.Add("Tem que ter um medio para realizar a consulta");
+            if (this.Medicos == null || this.Medicos.Count == 0)
+                erros.Add("É necessário pelo menos um médico para realizar a cirurgia");
 
-            if (string.IsNullOrEmpty(this.Inicio.ToLongDateString()))
-                erros.Add("Data de inicio invalida");
+            if (this.Inicio == default(DateTime))
+                erros.Add("Data de início inválida");
 
-            if (string.IsNullOrEmpty(this.Termino.ToLongDateString()))
-                erros.Add("Data de termino invalida");
+            if (this.Termino == default(DateTime))
+                erros.Add("Data de término inválida");
+
+            if (this.Termino <= this.Inicio)
+                erros.Add("A data de término deve ser posterior à data de início");
 
             return erros;
         }
 
+        public bool VerificarConflito(Cirurgia novaCirurgia, List<Cirurgia> cirurgiasExistentes)
+        {
+            foreach (var cirurgia in cirurgiasExistentes)
+            {
+                if ((novaCirurgia.Inicio < cirurgia.Termino && novaCirurgia.Termino > cirurgia.Inicio))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
+
 }

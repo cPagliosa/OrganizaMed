@@ -1,4 +1,6 @@
 ﻿using Med.dominio.Compartilhado;
+using Med.dominio.ModuloAtividade;
+using Med.dominio.ModuloConsulta;
 
 namespace Med.dominio.ModuloMedico
 {
@@ -9,6 +11,7 @@ namespace Med.dominio.ModuloMedico
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime Cooldown { get; set; }
+        public IEnumerable<Consulta>? Atividades { get; set; }
 
 
         public Medico() { }
@@ -20,6 +23,7 @@ namespace Med.dominio.ModuloMedico
             this.Email = email;
             this.Telefone = telefone;
             this.Cooldown = cooldown ?? DateTime.MinValue;
+            this.Atividades = [];
         }
         public override List<string> Validar()
         {

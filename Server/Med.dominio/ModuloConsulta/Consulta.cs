@@ -34,7 +34,23 @@ namespace Med.dominio.ModuloConsulta
             if (string.IsNullOrEmpty(this.Termino.ToLongDateString()))
                 erros.Add("Data de termino invalida");
 
+            if (this.Termino <= this.Inicio)
+                erros.Add("A data de término deve ser posterior à data de início");
+
             return erros;
+        }
+
+        public bool VerificarConflito(Consulta novaConsulta, List<Consulta> consultasExistentes)
+        {
+            foreach (var consulta in consultasExistentes)
+            {
+                if ((novaConsulta.Inicio < consulta.Termino && novaConsulta.Termino > consulta.Inicio))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
