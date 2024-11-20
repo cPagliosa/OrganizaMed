@@ -11,7 +11,7 @@ namespace Med.dominio.ModuloMedico
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime Cooldown { get; set; }
-        public IEnumerable<Consulta>? Atividades { get; set; }
+        public IEnumerable<Atividade>? Atividades { get; set; }
 
 
         public Medico() { }

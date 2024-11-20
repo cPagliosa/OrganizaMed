@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Med.dominio.ModuloAtividade;
 using Med.dominio.ModuloMedico;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -13,20 +14,21 @@ namespace Med.Infra.Orm.ModuloMedico
     {
         public void Configure(EntityTypeBuilder<Medico> builder)
         {
-            builder.ToTable("TBMedico");
+            builder.ToTable("Medicos");
 
             builder.Property(x => x.Id).ValueGeneratedNever();
 
-            builder.Property(x => x.Nome).IsRequired();
+            builder.Property(m => m.Nome).IsRequired().HasMaxLength(200);
 
-            builder.Property(x => x.Email).IsRequired();
+            builder.Property(m => m.CRM).IsRequired().HasMaxLength(20);
 
-            builder.Property(x => x.Telefone).IsRequired();
+            builder.Property(m => m.Email).HasMaxLength(150);
 
-            builder.Property(x => x.CRM).IsRequired();
+            builder.HasIndex(m => m.Email).IsUnique();
 
-            builder.Property(x => x.Cooldown).IsRequired();
+            builder.Property(m => m.Telefone).HasMaxLength(15);
 
+            builder.Property(m => m.Cooldown).IsRequired();
         }
     }
 }

@@ -2,13 +2,17 @@
 {
     public interface IRepositorioBase<TEntidadeBase> where TEntidadeBase : EntidadeBase
     {
-        Task<bool> Inserir(TEntidadeBase registro);
+        void Inserir(TEntidadeBase novoRegistro);
 
-        TEntidadeBase SelecionarPorId(Guid  id);
+        List<TEntidadeBase> SelecionarTodos();
+
+        TEntidadeBase SelecionarPorId(Guid id);
+
+       
+        Task<bool> InserirAsync(TEntidadeBase registro);
+
+        Task<List<TEntidadeBase>> SelecionarTodosAsync();
 
         Task<TEntidadeBase> SelecionarPorIdAsync(Guid id);
-
-        Task<List<TEntidadeBase>> SelecionarTodos();
-
     }
 }
