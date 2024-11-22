@@ -48,8 +48,8 @@ namespace Med.dominio.ModuloMedico
             if(string.IsNullOrEmpty(this.Email))
                 erros.Add("O email não pode ser nulo");
 
-            if (string.IsNullOrEmpty(this.Email))
-                erros.Add("O email não pode ser nulo");
+            if (string.IsNullOrEmpty(this.Telefone))
+                erros.Add("O telefone não pode ser nulo");
 
             return erros;
         }
