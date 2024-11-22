@@ -1,6 +1,6 @@
 ﻿namespace Med.dominio.Compartilhado
 {
-    public interface IRepositorioBase<TEntidadeBase> where TEntidadeBase : EntidadeBase
+    public interface IRepositorioBase<TEntidadeBase> where TEntidadeBase : EntidadeBase<TEntidadeBase>
     {
         void Inserir(TEntidadeBase novoRegistro);
 

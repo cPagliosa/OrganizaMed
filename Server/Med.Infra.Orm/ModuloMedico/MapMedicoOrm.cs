@@ -29,6 +29,7 @@ namespace Med.Infra.Orm.ModuloMedico
             builder.Property(m => m.Telefone).HasMaxLength(15);
 
             builder.Property(m => m.Cooldown).IsRequired();
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Med.dominio.ModuloAtividade
         Cirurgia,
         Consulta
     }
-    public class Atividade : EntidadeBase
+    public class Atividade : EntidadeBase<Atividade>
     {
         public string Titulo { get; set; }
         public DateTime Inicio { get; set; }
@@ -26,6 +26,15 @@ namespace Med.dominio.ModuloAtividade
             this.Medicos = medicos;
             if (tipo) this.Tipo = TipoAtividade.Consulta;
             else this.Tipo = TipoAtividade.Cirurgia;
+        }
+
+        public override void Atualizar(Atividade registro)
+        {
+            Id = registro.Id;
+            Titulo = registro.Titulo;
+            Termino = registro.Termino;
+            Medicos = registro.Medicos;
+            Tipo = registro.Tipo;
         }
 
         public override List<string> Validar()

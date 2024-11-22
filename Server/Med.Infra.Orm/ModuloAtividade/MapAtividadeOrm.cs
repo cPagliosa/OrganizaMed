@@ -9,7 +9,7 @@ namespace Med.Infra.Orm.ModuloAtividade
     {
         public void Configure(EntityTypeBuilder<Atividade> builder)
         {
-            builder.ToTable("Ativiades");
+            builder.ToTable("Atividades");
 
             builder.Property(x => x.Id).ValueGeneratedNever();
 
@@ -22,12 +22,21 @@ namespace Med.Infra.Orm.ModuloAtividade
             builder.Property(x => x.Tipo).IsRequired();
 
             builder.HasMany(x => x.Medicos)
-                .WithMany(y => y.Atividades) 
+                .WithMany(y => y.Atividades)
                 .UsingEntity<Dictionary<string, object>>(
                     "AtividadeMedico",
-                    j => j.HasOne<Medico>().WithMany().HasForeignKey("MedicoId"),
-                    j => j.HasOne<Atividade>().WithMany().HasForeignKey("AtividadeId")
+                    j => j
+                        .HasOne<Medico>()
+                        .WithMany()
+                        .HasForeignKey("MedicoId")
+                        .OnDelete(DeleteBehavior.Restrict), // Altere o comportamento para "Restrict"
+                    j => j
+                        .HasOne<Atividade>()
+                        .WithMany()
+                        .HasForeignKey("AtividadeId")
+                        .OnDelete(DeleteBehavior.Cascade) // Mantenha o comportamento em uma relação
                 );
+
         }
     }
 }

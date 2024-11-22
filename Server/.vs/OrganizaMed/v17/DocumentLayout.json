@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}|Med.Infra.Orm\\Med.Infra.Orm.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\med.infra.orm\\compartinhado\\repositoriobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}|Med.Infra.Orm\\Med.Infra.Orm.csproj|solutionrelative:med.infra.orm\\compartinhado\\repositoriobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}|Med.Infra.Orm\\Med.Infra.Orm.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\med.infra.orm\\modulomedico\\repositoriomedicoorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}|Med.Infra.Orm\\Med.Infra.Orm.csproj|solutionrelative:med.infra.orm\\modulomedico\\repositoriomedicoorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}|Med.Infra.Orm\\Med.Infra.Orm.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\med.infra.orm\\moduloatividade\\repositorioatividedeorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}|Med.Infra.Orm\\Med.Infra.Orm.csproj|solutionrelative:med.infra.orm\\moduloatividade\\repositorioatividedeorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E0BF64E-0D69-4233-B440-A6C5546D9B96}|Med.dominio\\Med.dominio.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\med.dominio\\compartilhado\\irepositoriobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E0BF64E-0D69-4233-B440-A6C5546D9B96}|Med.dominio\\Med.dominio.csproj|solutionrelative:med.dominio\\compartilhado\\irepositoriobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,62 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RepositorioBase.cs",
-              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.Infra.Orm\\Compartinhado\\RepositorioBase.cs",
-              "RelativeDocumentMoniker": "Med.Infra.Orm\\Compartinhado\\RepositorioBase.cs",
-              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.Infra.Orm\\Compartinhado\\RepositorioBase.cs",
-              "RelativeToolTip": "Med.Infra.Orm\\Compartinhado\\RepositorioBase.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:58:24.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RepositorioMedicoOrm.cs",
-              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.Infra.Orm\\ModuloMedico\\RepositorioMedicoOrm.cs",
-              "RelativeDocumentMoniker": "Med.Infra.Orm\\ModuloMedico\\RepositorioMedicoOrm.cs",
-              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.Infra.Orm\\ModuloMedico\\RepositorioMedicoOrm.cs",
-              "RelativeToolTip": "Med.Infra.Orm\\ModuloMedico\\RepositorioMedicoOrm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:56:30.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRepositorioBase.cs",
-              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\Compartilhado\\IRepositorioBase.cs",
-              "RelativeDocumentMoniker": "Med.dominio\\Compartilhado\\IRepositorioBase.cs",
-              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\Compartilhado\\IRepositorioBase.cs",
-              "RelativeToolTip": "Med.dominio\\Compartilhado\\IRepositorioBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:52:45.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositorioAtividedeOrm.cs",
-              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.Infra.Orm\\ModuloAtividade\\RepositorioAtividedeOrm.cs",
-              "RelativeDocumentMoniker": "Med.Infra.Orm\\ModuloAtividade\\RepositorioAtividedeOrm.cs",
-              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.Infra.Orm\\ModuloAtividade\\RepositorioAtividedeOrm.cs",
-              "RelativeToolTip": "Med.Infra.Orm\\ModuloAtividade\\RepositorioAtividedeOrm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:45:20.636Z",
-              "EditorCaption": ""
             }
           ]
         }

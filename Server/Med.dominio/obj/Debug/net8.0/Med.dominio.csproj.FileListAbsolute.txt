@@ -1,0 +1,13 @@
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.csproj.AssemblyReference.cache
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.AssemblyInfoInputs.cache
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.AssemblyInfo.cs
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.csproj.CoreCompileInputs.cache
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.sourcelink.json
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\bin\Debug\net8.0\Med.dominio.deps.json
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\bin\Debug\net8.0\Med.dominio.dll
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\bin\Debug\net8.0\Med.dominio.pdb
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.dll
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\refint\Med.dominio.dll
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\Med.dominio.pdb
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\Med.dominio\obj\Debug\net8.0\ref\Med.dominio.dll

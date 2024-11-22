@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{CA63
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{06D60AE7-5B28-4AFF-B780-0BC7987A8506}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Med.Infra.Orm", "Med.Infra.Orm\Med.Infra.Orm.csproj", "{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Med.Infra.Orm", "Med.Infra.Orm\Med.Infra.Orm.csproj", "{9B50C51D-D2F6-4350-B59E-183F4D99DFB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste", "Teste", "{8E6B104A-BAAC-47A3-A8B2-B1550A5C2FBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

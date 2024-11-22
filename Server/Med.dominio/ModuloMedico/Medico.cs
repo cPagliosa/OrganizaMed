@@ -1,10 +1,9 @@
 ﻿using Med.dominio.Compartilhado;
 using Med.dominio.ModuloAtividade;
-using Med.dominio.ModuloConsulta;
 
 namespace Med.dominio.ModuloMedico
 {
-    public class Medico : EntidadeBase
+    public class Medico : EntidadeBase<Medico>
     {
         public string Nome { get; set; }
         public string CRM { get; set; }
@@ -25,6 +24,17 @@ namespace Med.dominio.ModuloMedico
             this.Cooldown = cooldown ?? DateTime.MinValue;
             this.Atividades = [];
         }
+
+        public override void Atualizar(Medico registro)
+        {
+            Id = registro.Id;
+            Nome = registro.Nome;
+            CRM = registro.CRM;
+            Email = registro.Email;
+            Telefone = registro.Telefone;
+            Cooldown = registro.Cooldown;
+        }
+
         public override List<string> Validar()
         {
             List<string> erros = [];
@@ -42,6 +52,13 @@ namespace Med.dominio.ModuloMedico
                 erros.Add("O email não pode ser nulo");
 
             return erros;
+        }
+
+        public DateTime Descanso(TimeSpan tempo,DateTime termino)
+        {
+            DateTime fimDescanso = termino.Add(tempo);
+
+            return fimDescanso;
         }
     }
 }

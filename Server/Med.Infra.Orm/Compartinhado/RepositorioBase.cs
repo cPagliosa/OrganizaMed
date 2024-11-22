@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Med.Infra.Orm.Compartinhado
 {
-    public class RepositorioBase<TEntidade> where TEntidade : EntidadeBase
+    public class RepositorioBase<TEntidade> where TEntidade : EntidadeBase<TEntidade>
     {
         protected MedDbContext dbContext;
         protected DbSet<TEntidade> registros;
