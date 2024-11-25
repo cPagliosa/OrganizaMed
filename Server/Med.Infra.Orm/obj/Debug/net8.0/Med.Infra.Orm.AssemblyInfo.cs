@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Med.Infra.Orm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ef085a593fb113c647f8e4bcffea1110106b3ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+745815d5ce8b648d83b5fad59cb9787ab9075f81")]
 [assembly: System.Reflection.AssemblyProductAttribute("Med.Infra.Orm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Med.Infra.Orm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -37,7 +37,7 @@ namespace Med.Dominio.Tests.ModuloMedico
         }
 
         [TestMethod]
-        public void Deve_Retornar_Nada_Erros_Entrada()
+        public void Deve_Retornar_Nenhum_Erros_Entrada()
         {
             Medico m = new Medico(
                 "Lucas", "45862-SC",
