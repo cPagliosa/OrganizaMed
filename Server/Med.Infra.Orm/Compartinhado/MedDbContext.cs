@@ -1,38 +1,42 @@
-﻿using eAgenda.Dominio.ModuloAutenticacao;
-using Med.dominio.Compartilhado;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Serilog;
-using System.Reflection;
 using Med.dominio.ModuloAtividade;
 using Med.dominio.ModuloMedico;
+using System;
+using Med.dominio.Compartilhado;
 
 namespace Med.Infra.Orm.Compartinhado
 {
-    public class MedDbContext : IdentityDbContext<Usuario, IdentityRole<Guid>, Guid>, IContextoPersistencia
+    public class MedDbContext : DbContext , IContextoPersistencia
     {
-        private Guid usuarioId;
+        public DbSet<Atividade> Atividades { get; set; }
+        public DbSet<Medico> Medicos { get; set; }
 
-        public MedDbContext(DbContextOptions options,ITenantProvider tenantProvider = null) : base(options)
+        public MedDbContext(DbContextOptions<MedDbContext> options) : base(options)
         {
-            if(tenantProvider != null)
-                usuarioId = tenantProvider.UsuarioId;
+            
         }
-
-        public MedDbContext() { }
-
-        public void GravarDados()
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            SaveChanges();
+            ILoggerFactory loggerFactory = LoggerFactory.Create((x) =>
+            {
+                x.AddSerilog(Log.Logger);
+            });
+
+            optionsBuilder.UseLoggerFactory(loggerFactory);
+
+            optionsBuilder.EnableSensitiveDataLogging();
         }
-
-        public async Task<bool> GravarAsync()
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            int registrosAfetados = await SaveChangesAsync();
+            // Configuração de relacionamento n para n
+            modelBuilder.Entity<Atividade>()
+                .HasMany(a => a.Medicos)
+                .WithMany(m => m.Atividades)
+                .UsingEntity(j => j.ToTable("AtividadesMedicos"));
 
-            return registrosAfetados > 0;
+         
         }
 
         public void DesfazerAlteracoes()
@@ -64,31 +68,18 @@ namespace Med.Infra.Orm.Compartinhado
             }
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public void GravarDados()
         {
-
-            ILoggerFactory loggerFactory = LoggerFactory.Create((x) =>
-            {
-                x.AddSerilog(Log.Logger);
-            });
-
-            optionsBuilder.UseLoggerFactory(loggerFactory);
-
-            optionsBuilder.EnableSensitiveDataLogging();
+            SaveChanges();
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        public async Task<bool> GravarAsync()
         {
-            Type tipo = typeof(MedDbContext);
+            int registrosAfetados = await SaveChangesAsync();
 
-            Assembly dllComConfiguracoesOrm = tipo.Assembly;
-
-            modelBuilder.ApplyConfigurationsFromAssembly(dllComConfiguracoesOrm);
-
-            modelBuilder.Entity<Medico>().HasQueryFilter(x => x.UsuarioId == usuarioId);
-            modelBuilder.Entity<Atividade>().HasQueryFilter(x => x.UsuarioId == usuarioId);
-            
-
-            base.OnModelCreating(modelBuilder);
+            return registrosAfetados > 0;
         }
+
+        
     }
 }

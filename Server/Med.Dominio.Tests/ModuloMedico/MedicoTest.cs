@@ -3,8 +3,11 @@
 namespace Med.Dominio.Tests.ModuloMedico
 {
     [TestClass]
+    [TestCategory("Unitario")]
     public class MedicoTest
     {
+        
+
         [TestMethod]
         public void Deve_Add_Tempo_Descanso_Cirurgia()
         {

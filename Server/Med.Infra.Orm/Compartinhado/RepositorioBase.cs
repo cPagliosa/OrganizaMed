@@ -5,7 +5,7 @@ namespace Med.Infra.Orm.Compartinhado
 {
     public class RepositorioBase<TEntidade> where TEntidade : EntidadeBase<TEntidade>
     {
-        protected MedDbContext dbContext;
+        protected readonly MedDbContext dbContext;
         protected DbSet<TEntidade> registros;
 
         public RepositorioBase(IContextoPersistencia ctx)
@@ -17,6 +17,11 @@ namespace Med.Infra.Orm.Compartinhado
         public virtual void Inserir(TEntidade novoRegistro)
         {
             registros.Add(novoRegistro);
+        }
+
+        public virtual void Editar(TEntidade registro)
+        {
+            registros.Update(registro);
         }
 
         public virtual TEntidade SelecionarPorId(Guid id)

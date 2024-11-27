@@ -1,8 +1,10 @@
 ﻿using Med.dominio.Compartilhado;
 using Med.dominio.ModuloAtividade;
+using Med.dominio.ModuloAtividadeMedico;
 
 namespace Med.dominio.ModuloMedico
 {
+    [Serializable]
     public class Medico : EntidadeBase<Medico>
     {
         public string Nome { get; set; }
@@ -10,19 +12,18 @@ namespace Med.dominio.ModuloMedico
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime Cooldown { get; set; }
-        public IEnumerable<Atividade>? Atividades { get; set; }
+        public List<Atividade> Atividades { get; set; } = new List<Atividade>();
 
 
         public Medico() { }
 
-        public Medico(string nome,string crm,string email,string telefone, DateTime? cooldown = null)
+        public Medico(string nome, string crm, string email, string telefone, DateTime? cooldown = null)
         {
             this.Nome = nome;
             this.CRM = crm;
             this.Email = email;
             this.Telefone = telefone;
             this.Cooldown = cooldown ?? DateTime.MinValue;
-            this.Atividades = [];
         }
 
         public override void Atualizar(Medico registro)
