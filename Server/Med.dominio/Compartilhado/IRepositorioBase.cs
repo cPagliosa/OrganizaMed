@@ -4,11 +4,12 @@
     {
         void Inserir(TEntidadeBase novoRegistro);
 
+        void Editar(TEntidadeBase novoRegistro);
+
         List<TEntidadeBase> SelecionarTodos();
 
         TEntidadeBase SelecionarPorId(Guid id);
 
-       
         Task<bool> InserirAsync(TEntidadeBase registro);
 
         Task<List<TEntidadeBase>> SelecionarTodosAsync();
