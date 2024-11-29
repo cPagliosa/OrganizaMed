@@ -7,13 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Med.Dominio.Tests\Med.Dominio.Tests.csproj" />
+    <ProjectReference Include="..\Med.dominio\Med.dominio.csproj" />
     <ProjectReference Include="..\Med.Infra.Orm\Med.Infra.Orm.csproj" />
     <ProjectReference Include="..\OrganizaMed.Aplicacao\OrganizaMed.Aplicacao.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Config\Mapping\Actions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Production.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

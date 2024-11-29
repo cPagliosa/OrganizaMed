@@ -4,6 +4,7 @@ using Med.dominio.ModuloAtividadeMedico;
 using Med.dominio.ModuloMedico;
 using Med.Infra.Orm.Compartinhado;
 using Med.Infra.Orm.ModuloMedico;
+using Microsoft.EntityFrameworkCore;
 
 namespace Med.Infra.Orm.ModuloAtividade
 {
@@ -21,6 +22,17 @@ namespace Med.Infra.Orm.ModuloAtividade
             AddColdownMedico(novoRegistro);
             base.Inserir(novoRegistro);
         }
+
+        public override async Task<Atividade> SelecionarPorIdAsync(Guid id)
+        {
+            return registros.Include(a => a.Medicos).SingleOrDefault(x => x.Id == id);
+        }
+
+        public override async Task<List<Atividade>> SelecionarTodosAsync()
+        {
+            return await registros.Include(a => a.Medicos).ToListAsync();
+        }
+
 
         private void ValidarAtividade(Atividade atividade)
         {

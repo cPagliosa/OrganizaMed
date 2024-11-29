@@ -1,0 +1,16 @@
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\bin\Debug\net8.0\OrganizaMed.Aplicacao.deps.json
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\bin\Debug\net8.0\OrganizaMed.Aplicacao.dll
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\bin\Debug\net8.0\OrganizaMed.Aplicacao.pdb
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\bin\Debug\net8.0\Med.dominio.dll
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\bin\Debug\net8.0\Med.dominio.pdb
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.csproj.AssemblyReference.cache
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.AssemblyInfoInputs.cache
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.AssemblyInfo.cs
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.sourcelink.json
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\Organiza.3B7E838F.Up2Date
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.dll
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\refint\OrganizaMed.Aplicacao.dll
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\OrganizaMed.Aplicacao.pdb
+C:\Users\caiop\OneDrive\Documentos\AcdProgramer\TCC\OrganizaMed\Server\OrganizaMed.Aplicacao\obj\Debug\net8.0\ref\OrganizaMed.Aplicacao.dll

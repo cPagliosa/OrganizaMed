@@ -51,5 +51,17 @@ namespace OrganizaMed.Aplicacao.ModuloMedico
 
             return Result.Ok(medico);
         }
+
+        public async Task<Result<Medico>> EditarAsync(Medico medico)
+        {
+            var resultadoValidacao = medico.Validar();
+
+            if (resultadoValidacao.Count > 0)
+                return Result.Fail(resultadoValidacao);
+
+            repositorioMedico.Editar(medico);
+
+            return Result.Ok(medico);
+        }
     }
 }
