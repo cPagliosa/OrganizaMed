@@ -17,9 +17,6 @@ namespace Med.Infra.Orm.ModuloAtividade
 
         public override void Inserir(Atividade novoRegistro)
         {
-            ValidarAtividade(novoRegistro);
-            ValidarTempoAtividade(novoRegistro);
-            AddColdownMedico(novoRegistro);
             base.Inserir(novoRegistro);
         }
 
@@ -28,9 +25,15 @@ namespace Med.Infra.Orm.ModuloAtividade
             return registros.Include(a => a.Medicos).SingleOrDefault(x => x.Id == id);
         }
 
+
         public override async Task<List<Atividade>> SelecionarTodosAsync()
         {
             return await registros.Include(a => a.Medicos).ToListAsync();
+        }
+
+        public async Task<List<Atividade>> SelecionarTodaAtividade()
+        {
+            return await registros.ToListAsync();
         }
 
 

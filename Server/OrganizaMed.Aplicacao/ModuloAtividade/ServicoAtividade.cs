@@ -1,4 +1,5 @@
-﻿using FluentResults;
+﻿using System.Runtime.CompilerServices;
+using FluentResults;
 using Med.dominio.Compartilhado;
 using Med.dominio.ModuloAtividade;
 using Med.dominio.ModuloMedico;
@@ -16,6 +17,7 @@ namespace OrganizaMed.Aplicacao.ModuloAtividade
         public ServicoAtividade(IRepositorioAtividade repositorioAtividade,IRepositorioMedico repositorioMedico,IContextoPersistencia contextoPersistencia)
         {
             this.repositorioAtividade = repositorioAtividade;
+            this.repositorioMedico = repositorioMedico;
             this.contextoPersistencia = contextoPersistencia;
         }
 
@@ -23,8 +25,12 @@ namespace OrganizaMed.Aplicacao.ModuloAtividade
         {
             Result resultado = Validar(atividade);
 
+            //this.ValidarTempoAtividade(atividade);
+
             if (resultado.IsFailed)
                 return Result.Fail(resultado.Errors);
+
+            this.AddColdownMedico(atividade);
 
             await repositorioAtividade.InserirAsync(atividade);
 
@@ -56,8 +62,12 @@ namespace OrganizaMed.Aplicacao.ModuloAtividade
 
         private async void ValidarTempoAtividade(Atividade atividade)
         {
+            DateTime  cool= atividade.Medicos[0].Cooldown;
+
             // Obtém todas as atividades existentes
-            var atividades = await repositorioAtividade.SelecionarTodosAsync();
+            var atividades = await repositorioAtividade.SelecionarTodaAtividade();
+
+            atividade.Medicos[0].Cooldown = cool;
 
             foreach (var ats in atividades)
             {

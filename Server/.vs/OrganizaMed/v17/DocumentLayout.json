@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83AB7E42-8664-4C85-BC60-FBE59DA7687B}|OrganizaMed.WebApi\\OrganizaMed.WebApi.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\organizamed.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AB7E42-8664-4C85-BC60-FBE59DA7687B}|OrganizaMed.WebApi\\OrganizaMed.WebApi.csproj|solutionrelative:organizamed.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83AB7E42-8664-4C85-BC60-FBE59DA7687B}|OrganizaMed.WebApi\\OrganizaMed.WebApi.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\organizamed.webapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{83AB7E42-8664-4C85-BC60-FBE59DA7687B}|OrganizaMed.WebApi\\OrganizaMed.WebApi.csproj|solutionrelative:organizamed.webapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0BF64E-0D69-4233-B440-A6C5546D9B96}|Med.dominio\\Med.dominio.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\med.dominio\\modulomedico\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0BF64E-0D69-4233-B440-A6C5546D9B96}|Med.dominio\\Med.dominio.csproj|solutionrelative:med.dominio\\modulomedico\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F636C6-EE7B-4E59-8EA6-B0E781B66995}|OrganizaMed.Aplicacao\\OrganizaMed.Aplicacao.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\organizamed.aplicacao\\modulomedico\\servicomedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F636C6-EE7B-4E59-8EA6-B0E781B66995}|OrganizaMed.Aplicacao\\OrganizaMed.Aplicacao.csproj|solutionrelative:organizamed.aplicacao\\modulomedico\\servicomedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,26 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "OrganizaMed.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.WebApi\\Program.cs",
-              "RelativeToolTip": "OrganizaMed.WebApi\\Program.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAswBMAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T18:53:38.279Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,6 +47,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.WebApi\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "OrganizaMed.WebApi\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.WebApi\\appsettings.Production.json",
+              "RelativeToolTip": "OrganizaMed.WebApi\\appsettings.Production.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAGAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-02T23:05:56.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServicoMedico.cs",
+              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "RelativeDocumentMoniker": "OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "RelativeToolTip": "OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T20:38:51.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Medico.cs",
+              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\ModuloMedico\\Medico.cs",
+              "RelativeDocumentMoniker": "Med.dominio\\ModuloMedico\\Medico.cs",
+              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\ModuloMedico\\Medico.cs",
+              "RelativeToolTip": "Med.dominio\\ModuloMedico\\Medico.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T20:38:51.588Z",
+              "EditorCaption": ""
             }
           ]
         }

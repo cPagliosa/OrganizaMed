@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
 using Med.dominio.ModuloAtividade;
+using Med.dominio.ModuloMedico;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using OrganizaMed.Aplicacao.ModuloAtividade;
+using OrganizaMed.Aplicacao.ModuloMedico;
 using OrganizaMed.WebApi.ViewModels;
 
 namespace OrganizaMed.WebApi.Controllers
@@ -43,6 +46,7 @@ namespace OrganizaMed.WebApi.Controllers
         [HttpPost("Inserir")]
         public async Task<IActionResult> Post(InserirAtividadeViewModels atividadeVm)
         {
+
             var atividade = mapeador.Map<Atividade>(atividadeVm);
 
             var resultado = await servicoAtividade.InserirAsync(atividade);

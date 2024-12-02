@@ -1,0 +1,13 @@
+.botao-icone {
+  background-color: rgb(123, 31, 162);
+  color: #ffffff;
+}
+
+.mat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}

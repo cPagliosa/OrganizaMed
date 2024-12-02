@@ -1,0 +1,46 @@
+<main class="container my-4">
+  <div class="row justify-content-center g-3 mt-2">
+    <div class="col col-lg-8 col-xxl-6">
+      <h1 class="fs-2">Detalhes da Atividade</h1>
+
+      <hr />
+      <mat-card
+        class="card-listagem card-animado mat-mdc-elevation-specific mat-elevation-z3"
+      >
+        <mat-card-header>
+          <mat-card-title>{{
+            obterTextoTipoAtividade(Atividade?.tipoAtividade)
+          }}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="d-grid mt-2">
+          <span
+            >Data de Inicio: {{ formatarData(Atividade?.inicio) }} -
+            {{ formatarHora(Atividade?.inicio) }}</span
+          >
+
+          <span
+            >Data de Término: {{ formatarData(Atividade?.termino) }} -
+            {{ formatarHora(Atividade?.termino) }}</span
+          >
+          <span class="mt-1">Lista de Medicos: </span>
+          <li *ngFor="let item of Atividade?.medicos">
+            {{ item.nome }}
+          </li>
+        </mat-card-content>
+      </mat-card>
+
+      <div class="row justify-content-end g-2 gap-1 mt-5">
+        <button
+          mat-stroked-button
+          class="col-md-3"
+          type="button"
+          routerLink="/atividades"
+        >
+          <mat-icon>keyboard_return</mat-icon>
+          Voltar
+        </button>
+      </div>
+    </div>
+  </div>
+</main>

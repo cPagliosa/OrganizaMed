@@ -9,8 +9,11 @@ namespace Med.Infra.Orm.ModuloMedico
         public RepositorioMedicoOrm(IContextoPersistencia ctx) : base(ctx)
         {
         }
-        
-        
 
+
+        public List<Medico> SelecionarMuitos(List<Guid> idsAtividadesSelecionadas)
+        {
+            return registros.Where(medi => idsAtividadesSelecionadas.Contains(medi.Id)).ToList();
+        }
     }
 }
