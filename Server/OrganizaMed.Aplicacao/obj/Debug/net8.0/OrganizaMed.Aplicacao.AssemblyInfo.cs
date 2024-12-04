@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrganizaMed.Aplicacao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+949cafb058f159e1623e689e4e5563dcf8ab0655")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42f9c154e02e7e6399bfee93a01e2de4475e47fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrganizaMed.Aplicacao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrganizaMed.Aplicacao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
