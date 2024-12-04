@@ -5,11 +5,13 @@ import {
 import { tipoAtividadeEnum } from './tipoAtividadeEnum';
 
 export interface InserirAtividadeViewModel {
-  horaInicio: Date;
-  horaTermino: Date;
-  tipoAtividade: tipoAtividadeEnum;
+  titulo : string;
+  inicio: Date;
+  termino: Date;
+  tipo: tipoAtividadeEnum;
   medicosId: number[];
 }
+
 
 export interface AtividadeInseridaViewModel {
   id: string;

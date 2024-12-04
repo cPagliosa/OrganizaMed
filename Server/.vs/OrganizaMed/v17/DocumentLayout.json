@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89F636C6-EE7B-4E59-8EA6-B0E781B66995}|OrganizaMed.Aplicacao\\OrganizaMed.Aplicacao.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\organizamed.aplicacao\\modulomedico\\servicomedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F636C6-EE7B-4E59-8EA6-B0E781B66995}|OrganizaMed.Aplicacao\\OrganizaMed.Aplicacao.csproj|solutionrelative:organizamed.aplicacao\\modulomedico\\servicomedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E0BF64E-0D69-4233-B440-A6C5546D9B96}|Med.dominio\\Med.dominio.csproj|c:\\users\\caiop\\onedrive\\documentos\\acdprogramer\\tcc\\organizamed\\server\\med.dominio\\moduloatividade\\atividade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E0BF64E-0D69-4233-B440-A6C5546D9B96}|Med.dominio\\Med.dominio.csproj|solutionrelative:med.dominio\\moduloatividade\\atividade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +70,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ServicoMedico.cs",
+              "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "RelativeDocumentMoniker": "OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "ToolTip": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "RelativeToolTip": "OrganizaMed.Aplicacao\\ModuloMedico\\ServicoMedico.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T20:08:48.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ValidarAtividade.cs",
               "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\ModuloAtividade\\ValidarAtividade.cs",
               "RelativeDocumentMoniker": "Med.dominio\\ModuloAtividade\\ValidarAtividade.cs",
@@ -78,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ServicoBase.cs",
               "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.Aplicacao\\Compartinhado\\ServicoBase.cs",
               "RelativeDocumentMoniker": "OrganizaMed.Aplicacao\\Compartinhado\\ServicoBase.cs",
@@ -90,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Atividade.cs",
               "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\ModuloAtividade\\Atividade.cs",
               "RelativeDocumentMoniker": "Med.dominio\\ModuloAtividade\\Atividade.cs",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RepositorioAtividedeOrm.cs",
               "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.Infra.Orm\\ModuloAtividade\\RepositorioAtividedeOrm.cs",
               "RelativeDocumentMoniker": "Med.Infra.Orm\\ModuloAtividade\\RepositorioAtividedeOrm.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ServicoAtividade.cs",
               "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.Aplicacao\\ModuloAtividade\\ServicoAtividade.cs",
               "RelativeDocumentMoniker": "OrganizaMed.Aplicacao\\ModuloAtividade\\ServicoAtividade.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IRepositorioBase.cs",
               "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\Med.dominio\\Compartilhado\\IRepositorioBase.cs",
               "RelativeDocumentMoniker": "Med.dominio\\Compartilhado\\IRepositorioBase.cs",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AtividadeController.cs",
               "DocumentMoniker": "C:\\Users\\caiop\\OneDrive\\Documentos\\AcdProgramer\\TCC\\OrganizaMed\\Server\\OrganizaMed.WebApi\\Controllers\\AtividadeController.cs",
               "RelativeDocumentMoniker": "OrganizaMed.WebApi\\Controllers\\AtividadeController.cs",

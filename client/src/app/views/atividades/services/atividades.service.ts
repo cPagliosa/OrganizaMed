@@ -22,7 +22,8 @@ export class AtividadeService {
   cadastrar(
     novoAtividade: InserirAtividadeViewModel
   ): Observable<AtividadeInseridaViewModel> {
-    const urlCompleto = `${this.url}/Inserir`;
+    console.log(novoAtividade)
+    const urlCompleto = `${this.url}`;
     return this.http
       .post<AtividadeInseridaViewModel>(urlCompleto, novoAtividade)
       .pipe(
@@ -33,7 +34,7 @@ export class AtividadeService {
 
 
   selecionarTodos(): Observable<ListarAtividadeViewModel[]> {
-    const urlCompleto = `${this.url}/SelecionarTodos`;
+    const urlCompleto = `${this.url}`;
     return this.http.get<ListarAtividadeViewModel[]>(urlCompleto).pipe(
       map((x) => this.processarRes(x) as ListarAtividadeViewModel[]),
       catchError(this.processarFalha)
@@ -41,7 +42,7 @@ export class AtividadeService {
   }
 
   selecionarPorId(id: string): Observable<VisualizarAtividadeViewModel> {
-    const urlCompleto = `${this.url}/SelecionarPorId/${id}`;
+    const urlCompleto = `${this.url}/${id}`;
     return this.http.get<VisualizarAtividadeViewModel>(urlCompleto).pipe(
       map((x) => this.processarRes(x) as VisualizarAtividadeViewModel),
       catchError(this.processarFalha)
@@ -49,7 +50,7 @@ export class AtividadeService {
   }
 
   private processarRes(res: any): any {
-    return res;
+    return res.dados;
   }
   private processarFalha(resposta: any) {
     return throwError(() => new Error(resposta.error.erros[0]));

@@ -1,4 +1,4 @@
 export enum tipoAtividadeEnum {
-  Consulta,
-  Cirurgia
+  Cirurgia,
+  Consulta
 }

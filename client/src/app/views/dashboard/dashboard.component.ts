@@ -36,7 +36,7 @@ export class DashboardComponent {
       descricao:
         'Gerencie atividades de maneira integrada, garantindo organização e eficiência.',
       rota: '/atividades',
-      icone: 'medical_services',
+      icone: 'monitor_heart',
       cypressTag: 'atividades',
     },
   ];

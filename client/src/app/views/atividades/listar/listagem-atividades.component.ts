@@ -44,7 +44,7 @@ export class ListagemAtividadesComponent implements OnInit {
   }
 
   ordenarAtividades(tipo: number) {
-    if(tipo == 0){
+    if(tipo == 1){
      return  `Cunsulta`;
     }else{
       return `Cirurgia`;

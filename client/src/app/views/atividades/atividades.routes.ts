@@ -6,6 +6,7 @@ import { ListarMedicoViewModel } from '../medicos/models/medico.models';
 import { VisualizarAtividadeViewModel } from './models/atividade.models';
 import { AtividadeService } from './services/atividades.service';
 import { DetalhesAtividadeComponent } from './visualizar/detalhes-atividade.component';
+import { CadastroAtividadesComponent } from './cadastrar/cadastro-atividades.component';
 
 const visualizarAtividadesResolver: ResolveFn<VisualizarAtividadeViewModel> = (
   route: ActivatedRouteSnapshot
@@ -25,5 +26,12 @@ export const AtividadesRoutes: Routes = [
     path: 'visualizar/:id',
     component: DetalhesAtividadeComponent,
     resolve: { atividade: visualizarAtividadesResolver },
+  },
+  {
+    path: 'cadastrar',
+    component: CadastroAtividadesComponent,
+    resolve: {
+      medicos: ListagemMedicosResolver,
+    },
   },
 ];

@@ -22,7 +22,7 @@ export class MedicoService {
   cadastrar(
     novoMedico: InserirMedicoViewModel
   ): Observable<MedicoInseridoViewModel> {
-    const urlCompleto = `${this.url}/Inserir`;
+    const urlCompleto = `${this.url}`;
     return this.http.post<MedicoInseridoViewModel>(urlCompleto, novoMedico).pipe(
       map((x) => this.processarRes(x) as MedicoInseridoViewModel),
       tap((x) => console.log(x))
@@ -30,7 +30,7 @@ export class MedicoService {
   }
 
   selecionarTodos(): Observable<ListarMedicoViewModel[]> {
-    const urlCompleto = `${this.url}/SelecionarTodos`;
+    const urlCompleto = `${this.url}`;
     console.log(urlCompleto)
     return this.http
       .get<ListarMedicoViewModel[]>(urlCompleto)
@@ -39,7 +39,7 @@ export class MedicoService {
 
 
   selecionarPorId(id: string): Observable<VisualizarMedicoViewModel> {
-    const urlCompleto = `${this.url}/SelecionarPorId/${id}`;
+    const urlCompleto = `${this.url}/${id}`;
 
     return this.http
       .get<VisualizarMedicoViewModel>(urlCompleto)
@@ -49,6 +49,6 @@ export class MedicoService {
   private processarRes(res: any): any {
     console.log(res);
     console.log(res.dados);
-    return res;
+    return res.dados;
   }
 }
