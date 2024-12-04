@@ -2,7 +2,7 @@
 using Med.dominio.ModuloMedico;
 using OrganizaMed.WebApi.ViewModels;
 
-namespace OrganizaMed.WebApi.Config.Mapping
+namespace OrganizaMed.WebApi.Config
 {
     public class MedicoProfile : Profile
     {

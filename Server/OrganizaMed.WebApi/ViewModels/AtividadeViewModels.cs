@@ -19,7 +19,7 @@ namespace OrganizaMed.WebApi.ViewModels
         public required DateTime Inicio { get; set; }
         public required DateTime Termino { get; set; }
         public required TipoAtividade Tipo { get; set; }
-        public required List<ListarMedicoViewModel> Medicos { get; set; }
+        public required List<Guid> MedicosId { get; set; }
     }
 
     public class ListarAtividadeViewModel

@@ -17,6 +17,9 @@ namespace Med.Infra.Orm.ModuloAtividade
 
         public override void Inserir(Atividade novoRegistro)
         {
+            this.ValidarTempoAtividade(novoRegistro);
+            this.ValidarAtividade(novoRegistro);
+            this.AddColdownMedico(novoRegistro);
             base.Inserir(novoRegistro);
         }
 

@@ -23,11 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganizaMed.Aplicacao", "Or
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Distribuicao", "Distribuicao", "{1DD569CC-817A-4638-AF26-3F18EDDA4389}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizaMed.WebApi", "OrganizaMed.WebApi\OrganizaMed.WebApi.csproj", "{83AB7E42-8664-4C85-BC60-FBE59DA7687B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganizaMed.WebApi", "OrganizaMed.WebApi\OrganizaMed.WebApi.csproj", "{83AB7E42-8664-4C85-BC60-FBE59DA7687B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apresentacao", "Apresentacao", "{DD96349A-3061-454F-8D76-65CF219BAD42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizaMedConsoleApp", "OrganizaMedConsoleApp\OrganizaMedConsoleApp.csproj", "{C5D06739-F281-4224-A6F2-0A646FA7C032}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganizaMedConsoleApp", "OrganizaMedConsoleApp\OrganizaMedConsoleApp.csproj", "{C5D06739-F281-4224-A6F2-0A646FA7C032}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

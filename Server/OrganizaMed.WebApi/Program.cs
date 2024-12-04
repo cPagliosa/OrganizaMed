@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using OrganizaMed.Aplicacao.ModuloAtividade;
 using OrganizaMed.Aplicacao.ModuloMedico;
 using OrganizaMed.WebApi.Config;
-using OrganizaMed.WebApi.Config.Mapping;
 using static OrganizaMed.WebApi.Config.AtividadeProfile;
 
 namespace OrganizaMed.WebApi
@@ -34,6 +33,8 @@ namespace OrganizaMed.WebApi
 
             builder.Services.AddScoped<IRepositorioAtividade, RepositorioAtividedeOrm>();
             builder.Services.AddScoped<ServicoAtividade>();
+
+            builder.Services.ConfigureControllersWithFilters();
 
             builder.Services.AddScoped<FormsAtividadeMappingAction>();
 

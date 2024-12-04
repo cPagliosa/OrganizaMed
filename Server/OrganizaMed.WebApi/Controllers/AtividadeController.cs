@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
 using Med.dominio.ModuloAtividade;
-using Med.dominio.ModuloMedico;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using OrganizaMed.Aplicacao.ModuloAtividade;
-using OrganizaMed.Aplicacao.ModuloMedico;
 using OrganizaMed.WebApi.ViewModels;
 
 namespace OrganizaMed.WebApi.Controllers
@@ -13,7 +10,7 @@ namespace OrganizaMed.WebApi.Controllers
     [ApiController]
     public class AtividadeController(ServicoAtividade servicoAtividade,IMapper mapeador) : ControllerBase
     {
-        [HttpGet("SelecionarTodos")]
+        [HttpGet]
 
         public async Task<IActionResult> Get()
         {
@@ -27,7 +24,7 @@ namespace OrganizaMed.WebApi.Controllers
             return Ok(viewModel);
         }
 
-        [HttpGet("SelecionarPorId/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
             var categoriaResult = await servicoAtividade.SelecionarPorIdAsync(id);
@@ -43,7 +40,7 @@ namespace OrganizaMed.WebApi.Controllers
             return Ok(viewModel);
         }
 
-        [HttpPost("Inserir")]
+        [HttpPost]
         public async Task<IActionResult> Post(InserirAtividadeViewModels atividadeVm)
         {
 

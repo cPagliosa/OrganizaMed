@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Med.dominio.ModuloMedico;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OrganizaMed.Aplicacao.ModuloMedico;
 using OrganizaMed.WebApi.ViewModels;
@@ -11,7 +10,7 @@ namespace OrganizaMed.WebApi.Controllers
     [ApiController]
     public class MedicoController(ServicoMedico servicoMedico,IMapper mapeador) : ControllerBase
     {
-        [HttpGet("SelecionarTodos")]
+        [HttpGet]
         
         public async Task<IActionResult> Get()
         {
@@ -25,7 +24,7 @@ namespace OrganizaMed.WebApi.Controllers
             return Ok(viewModel);
         }
 
-        [HttpGet("SelecionarPorId/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
             var categoriaResult = await servicoMedico.SelecionarPorIdAsync(id);
@@ -42,7 +41,7 @@ namespace OrganizaMed.WebApi.Controllers
         }
 
 
-        [HttpPost("Inserir")]
+        [HttpPost]
         public async Task<IActionResult> Post(InserirMedicoViewModels medicoVm)
         {
             var medico = mapeador.Map<Medico>(medicoVm);
@@ -54,25 +53,5 @@ namespace OrganizaMed.WebApi.Controllers
 
             return Ok(medicoVm);
         }
-
-        /*
-        [HttpPut("Editar/{id}")]
-        public async Task<IActionResult> Put(Guid id, EditarMedicoViewModel categoriaVm)
-        {
-            var selecaoCategoriaOriginal = await servicoMedico.SelecionarPorIdAsync(id);
-
-            if (selecaoCategoriaOriginal.IsFailed)
-                return NotFound(selecaoCategoriaOriginal.Errors);
-
-            var categoriaEditada = mapeador.Map(categoriaVm, selecaoCategoriaOriginal.Value);
-
-            var edicaoResult = await servicoMedico.EditarAsync(categoriaEditada);
-
-            if (edicaoResult.IsFailed)
-                return BadRequest(edicaoResult.Errors);
-
-            return Ok(edicaoResult.Value);
-        }
-        */
     }
 }
