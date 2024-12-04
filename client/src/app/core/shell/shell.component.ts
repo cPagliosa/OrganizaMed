@@ -44,7 +44,7 @@ export class ShellComponent {
     },
     {
       titulo: 'Atividades',
-      icone: 'short_stay',
+      icone: 'monitor_heart',
       rota: '/atividades',
     },
 
